@@ -1,27 +1,129 @@
-﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vision">
-    <meta name="author" content="webRunes">
-    <meta name="keywords" content="Vision, WRIO, hub">
-    <title>Vision</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Favicons -->
+    <link rel="icon" href="https://default.wrioos.com/ico/favicon.ico">
+    <title>WRIO Internet OS</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/material-kit.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<body>
 
+        <div class="cd-section" id="headers">
+            <div class="header-3">
+                <nav class="navbar navbar-transparent navbar-expand-lg">
+                    <div class="container col-sm-11">
+                      <a class="navbar-brand" href="https://wr.io"><img class="logo" src="https://wr.io/images/logo-white.png"></a>
+                        <div class="navbar-translate">
+                            <button type="button" class="ml-auto navbar-toggler" data-toggle="collapse" data-target="#navigation-example3">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navigation-example3">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="https://presentation.wr.io" class="nav-link">
+                                        Presentation
+                                    </a>
+                                </li>
+                                    <li class="nav-item">
+                                        <a href="https://wr.io/PitchDeck.pdf" class="nav-link">
+                                            Pitch Deck
+                                        </a>
+                                    </li>
+                                <li class="nav-item">
+                                    <a href="https://wr.io/WhitePaper.pdf" class="nav-link">
+                                        White Paper
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://wr.io" class="nav-link">
+                                        Back to wr.io
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Carousel Card -->
+                <div id="carousel_ids" class="carousel carousel-fade" data-interval="false">
+                    <div class="carousel-inner mobile-bg">
+                        <div class="carousel-item active">
+                            <div class="slide1"></div>
+                            <div class="carousel-caption">
+                              <div class="gradient">
+                                <h3>Internet OS</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget tortor fermentum, ornare nulla in, pharetra ex. Phasellus posuere leo eget enim molestie, et fringilla urna cursus. Phasellus vel turpis sodales nisi interdum congue. Nullam quis tincidunt odio. Nulla mattis id elit nec consequat. In id vestibulum risus, nec molestie est. Nullam sed orci et nisl viverra convallis et at velit. Aenean rhoncus venenatis odio laoreet tincidunt. Quisque dictum neque vitae ante commodo aliquet. Praesent ut pulvinar diam, a ultrices mi. Pellentesque viverra luctus elementum. Donec scelerisque velit nec magna feugiat ullamcorper. Praesent efficitur turpis elit, sed fermentum ipsum ultricies eget. Maecenas scelerisque, quam nec egestas euismod, libero sem auctor diam, sit amet fermentum arcu leo sed magna.</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide2"></div>
+                            <div class="carousel-caption">
+                              <h3>Login</h3>
+                              <p>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="prev">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="next">
+                        <i class="material-icons">keyboard_arrow_right</i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+    </div>
+    <!--   Core JS Files   -->
+    <script>
+        var stepTime = 20;
+        var docBody = document.body;
+        var focElem = document.documentElement;
+
+        var scrollAnimationStep = function (initPos, stepAmount) {
+            var newPos = initPos - stepAmount > 0 ? initPos - stepAmount : 0;
+
+            docBody.scrollTop = focElem.scrollTop = newPos;
+
+            newPos && setTimeout(function () {
+                scrollAnimationStep(newPos, stepAmount);
+            }, stepTime);
+        }
+
+        var scrollTopAnimated = function (speed) {
+            var topOffset = docBody.scrollTop || focElem.scrollTop;
+            var stepAmount = topOffset;
+
+            speed && (stepAmount = (topOffset * stepTime)/speed);
+
+            scrollAnimationStep(topOffset, stepAmount);
+        };
+        </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap-material-design.min.js"></script>
+    <!-- Plugins for presentation and navigation  -->
+    <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/vertical-nav.js"></script>
+    <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+    <script src="assets/js/material-kit.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99131563-12"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99131563-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag('config', 'UA-99131563-12');
-    </script>
+  gtag('config', 'UA-99131563-7');
+</script>
 
-</head>
-<body>
-    Coming
-</body>
-</html>
+</body></html>
