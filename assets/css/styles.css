@@ -58,7 +58,7 @@ body{background: url('../img/bg.jpg') center center;background-attachment:fixed;
   .navbar.navbar-transparent{position:absolute;width:100%}
   .carousel .carousel-caption{padding:0;width:100%}
   .carousel-caption{top:800px;right:0;left:0}
-  .gradient{padding:20px 80px 40px;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,1)))}
+  .gradient{padding:20px 80px 40px;min-height:240px;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,1)))}
   .slide1{background:url("../img/slide1.png") center no-repeat;height:1033px}
   .slide2{background:url("../img/slide2.png") center no-repeat;height:1033px}
 
@@ -156,7 +156,7 @@ sub{position:relative;top:0}
 
 @media all and (max-width: 992px) {
   h1{font-size:2em!important}
-  h2{font-size:1.2em!important}
+  h2{font-size:1.4em!important}
   h4{font-size:1.2em!important}
   .carousel-inner ul{font-size:1.1em!important}
   .carousel-inner ul a{font-size:1em!important}
