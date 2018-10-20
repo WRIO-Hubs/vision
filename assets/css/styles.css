@@ -10,8 +10,8 @@ body{background: url('../img/bg.jpg') center center;background-attachment:fixed;
   .navbar .navbar-brand{padding:0}
   .navbar .navbar-nav .nav-item .nav-link{color:#999;font-size:1em;font-weight:bold;transition:all .35s ease}
     .navbar .navbar-nav .nav-item .nav-link:hover{color:#fff;text-decoration:none;transition:all .35s ease}
-.container a{color:#46bdf4}
-.container a:hover{text-decoration:underline}
+.gradient a{color:#46bdf4}
+.gradient a:hover{text-decoration:underline}
 .carousel-inner .carousel-control-next{opacity:1}
   .carousel-inner .carousel-control-next .material-icons{font-size:36px;height:36px;position:inherit}
   .carousel-inner ul{font-size:1.125rem;line-height:1.5em;list-style-type:none;padding:0}
@@ -55,17 +55,16 @@ body{background: url('../img/bg.jpg') center center;background-attachment:fixed;
 .navbar.navbar-absolute{position:fixed}
 .fa-window-maximize{font-size:10px!important;margin-left:4px}
 .mobile-bg{background:url("../img/mobile.png") center no-repeat;height:1033px}
-  .navbar.navbar-transparent{position:absolute;width:100%}
-  .carousel .carousel-caption{padding:0;width:100%}
-  .carousel-caption{top:800px;right:0;left:0}
+  .title.pull-right{text-align:center;width:100%;position:absolute;top:60px}
+  .carousel .carousel-caption{padding:0;top:990px;right:0;left:0;width:100%}
+    .carousel .carousel-caption .caption-text{margin:auto;max-width:800px}
   .gradient{padding:20px 80px 40px;min-height:240px;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,1)))}
   .slide1{background:url("../img/slide1.png") center no-repeat;height:1033px}
   .slide2{background:url("../img/slide2.png") center no-repeat;height:1033px}
+  .slide3{background:url("../img/slide3.png") center no-repeat;height:1033px}
+  .slide4{background:url("../img/slide4.png") center no-repeat;height:1033px}
+  .slide5{background:url("../img/slide5.png") center no-repeat;height:1033px}
 
-/*
-.footer-big .gallery-feed a{width:20%;display:inline-block;margin-right:5%;margin-bottom:5%}
-.footer-big .gallery-feed h6{color:#000;background-color:#fff;font-size:.8em;padding:4px 8px;min-height:48px;text-align:center}
-.footer-big .gallery-feed img{width:100%}*/
 .footer-big .gallery-feed h6{display:none}
 
 .rating{margin:20px 0 0;text-align:center;display:none}

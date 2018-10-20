@@ -10,8 +10,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/material-kit.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-<body>
 
+    <link rel="stylesheet" href="assets/css/freezeframe_styles.min.css">
+    <script type="text/javascript" src="assets/js/freezeframe.pkgd.js"></script>
+
+<style type="text/css">
+    body {
+      text-align: center;
+      padding: 20px;
+    }
+    </style>
+
+    <script type="text/javascript">
+      $(function() {
+        second = new freezeframe({
+      'selector': '.my_class_3',
+      'animation_play_duration': 1000,
+      'non_touch_device_trigger_event': 'click'
+    }).freeze();
+        /*third = new freezeframe('.my_class_3').capture().setup();
+
+        $('.start').click(function(e) {
+          e.preventDefault();
+          third.trigger();
+        });
+
+        $('.stop').click(function(e) {
+          e.preventDefault();
+          third.release();
+        });*/
+      })
+    </script>
+<body>
         <div class="cd-section" id="headers">
             <div class="header-3">
                 <nav class="navbar navbar-transparent navbar-expand-lg">
@@ -53,25 +83,69 @@
                 </nav>
                 <!-- Carousel Card -->
                 <div id="carousel_ids" class="carousel carousel-fade" data-interval="false">
-                    <div class="carousel-inner page-header mobile-bg">
+                    <!--<div class="carousel-inner page-header mobile-bg" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="next">-->
+                      <div class="carousel-inner page-header mobile-bg">
                         <div class="carousel-item active">
-                            <div class="slide1"></div>
-                            <div class="carousel-caption">
-                              <div class="gradient">
+                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 1 <span>of</span> 15</h2>
+                          <img class=" my_class_3 freezeframe-responsive" src="http://static1.squarespace.com/static/51c748abe4b0c275d0aa86bf/56141631e4b0095d43132f02/5614164be4b0652b31fbd0a5/1444744817955/parislove9801.gif" />
+                          <div class="slide1"></div>
+                          <div class="carousel-caption">
+                            <div class="gradient">
+                              <div class="caption-text">
                                 <h2 class="title">Internet OS</h2>
-                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget tortor fermentum, ornare nulla in, pharetra ex. Phasellus posuere leo eget enim molestie, et fringilla urna cursus. Phasellus vel turpis sodales nisi interdum congue. Nullam quis tincidunt odio. Nulla mattis id elit nec consequat. In id vestibulum risus, nec molestie est. Nullam sed orci et nisl viverra convallis et at velit. Aenean rhoncus venenatis odio laoreet tincidunt. Quisque dictum neque vitae ante commodo aliquet. Praesent ut pulvinar diam, a ultrices mi. Pellentesque viverra luctus elementum. Donec scelerisque velit nec magna feugiat ullamcorper. Praesent efficitur turpis elit, sed fermentum ipsum ultricies eget. Maecenas scelerisque, quam nec egestas euismod, libero sem auctor diam, sit amet fermentum arcu leo sed magna.</h4>
+                                <h4>WRIO <a href="https://en.wikipedia.org/wiki/Internet_OS" target="_blank">Internet OS</a><sup><i class="fa fa-window-maximize"></i></sup> is an operating system designed to run all of its applications and services through a web browser.</h4>
                               </div>
                             </div>
+                          </div>
                         </div>
-                            <div class="carousel-item">
-                                <div class="slide2"></div>
-                                <div class="carousel-caption">
-                                  <div class="gradient">
-                                    <h2 class="title">Login</h2>
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-                                  </div>
-                                </div>
+                        <div class="carousel-item">
+                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 2 <span>of</span> 15</h2>
+                          <div class="slide2"></div>
+                          <div class="carousel-caption">
+                            <div class="gradient">
+                              <div class="caption-text">
+                                <h2 class="title">Single sign-in</h2>
+                                <h4>Blockchain address functions as ID. Access is granted through the use of a cryptokey stored on the user’s side. The authorisation system based on blockchain enables a decentralized global secure one-click “social-media-like” login for all applications and services, with the additional protection of anonymity. This means no need to continuously create new accounts, remember numerous passwords or entrust personal data to services.</h4>
+                              </div>
                             </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 3 <span>of</span> 15</h2>
+                          <div class="slide3"></div>
+                          <div class="carousel-caption">
+                            <div class="gradient">
+                              <div class="caption-text">
+                                <h2 class="title">Dashboard</h2>
+                                <h4>Blockchain address functions as ID. Access is granted through the use of a cryptokey stored on the user’s side. The authorisation system based on blockchain enables a decentralized global secure one-click “social-media-like” login for all applications and services, with the additional protection of anonymity. This means no need to continuously create new accounts, remember numerous passwords or entrust personal data to services.</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 4 <span>of</span> 15</h2>
+                          <div class="slide4"></div>
+                          <div class="carousel-caption">
+                            <div class="gradient">
+                              <div class="caption-text">
+                                <h2 class="title">Streams</h2>
+                                <h4>Text.</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 5 <span>of</span> 15</h2>
+                          <div class="slide5"></div>
+                          <div class="carousel-caption">
+                            <div class="gradient">
+                              <div class="caption-text">
+                                <h2 class="title">Streams</h2>
+                                <h4>Text.</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="prev">
                         <i class="material-icons">keyboard_arrow_left</i>
