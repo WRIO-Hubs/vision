@@ -59,6 +59,7 @@ body{background: url('../img/bg.jpg') center center;background-attachment:fixed;
   .carousel .carousel-caption{padding:0;top:990px;right:0;left:0;width:100%}
     .carousel .carousel-caption .caption-text{margin:auto;max-width:800px}
   .gradient{padding:20px 80px 40px;min-height:240px;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,1)))}
+  .slide{position:absolute;left:50px;top:500px}
   .slide1{background:url("../img/slide1.png") center no-repeat;height:1033px}
   .slide2{background:url("../img/slide2.png") center no-repeat;height:1033px}
   .slide3{background:url("../img/slide3.png") center no-repeat;height:1033px}

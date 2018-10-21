@@ -14,34 +14,23 @@
     <link rel="stylesheet" href="assets/css/freezeframe_styles.min.css">
     <script type="text/javascript" src="assets/js/freezeframe.pkgd.js"></script>
 
-<style type="text/css">
-    body {
-      text-align: center;
-      padding: 20px;
-    }
-    </style>
-
-    <script type="text/javascript">
-      $(function() {
-        second = new freezeframe({
-      'selector': '.my_class_3',
-      'animation_play_duration': 1000,
-      'non_touch_device_trigger_event': 'click'
-    }).freeze();
-        /*third = new freezeframe('.my_class_3').capture().setup();
-
-        $('.start').click(function(e) {
-          e.preventDefault();
-          third.trigger();
-        });
-
-        $('.stop').click(function(e) {
-          e.preventDefault();
-          third.release();
-        });*/
-      })
-    </script>
 <body>
+
+  <div class="row">
+    <div class="column medium-9 medium-centered large-8">
+      <figure>
+        <x-gif id="nTimes" ng-src="iKXH4E2.gif" n-times="1"></x-gif>
+      </figure>
+      <figure>
+        <x-gif id="nTimes" ng-src="2.gif" n-times="1"></x-gif>
+      </figure>
+    </div>
+  </div>
+  <script type="text/javascript" charset="utf-8">
+    angular.module('x-gif-demo', []);
+  </script>
+
+
         <div class="cd-section" id="headers">
             <div class="header-3">
                 <nav class="navbar navbar-transparent navbar-expand-lg">
