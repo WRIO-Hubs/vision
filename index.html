@@ -13,24 +13,25 @@
 
     <link rel="stylesheet" href="assets/css/freezeframe_styles.min.css">
     <script type="text/javascript" src="assets/js/freezeframe.pkgd.js"></script>
-
-<body>
-
-  <div class="row">
-    <div class="column medium-9 medium-centered large-8">
-      <figure>
-        <x-gif id="nTimes" ng-src="iKXH4E2.gif" n-times="1"></x-gif>
-      </figure>
-      <figure>
-        <x-gif id="nTimes" ng-src="2.gif" n-times="1"></x-gif>
-      </figure>
-    </div>
-  </div>
-  <script type="text/javascript" charset="utf-8">
-    angular.module('x-gif-demo', []);
-  </script>
-
-
+    <script>
+      if ('registerElement' in document
+        && 'createShadowRoot' in HTMLElement.prototype
+        && 'import' in document.createElement('link')
+        && 'content' in document.createElement('template')) {
+        // We're using a browser with native WC support!
+      } else {
+        document.write('<script src="https:\/\/cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/platform.js"><\/script>')
+      }
+    </script>
+    <script src="demos/angular.min.js"></script>
+    <link rel="import" href="dist/x-gif.html">
+    <script type="text/javascript" charset="utf-8">
+      angular.module('x-gif-demo', []);
+      //restart gifs
+      $(document).ready(function(){$('#carousel_ids').click(function(){$("x-gif").removeAttr("stopped");});});
+    </script>
+</head>
+<body ng-app="x-gif-demo">
         <div class="cd-section" id="headers">
             <div class="header-3">
                 <nav class="navbar navbar-transparent navbar-expand-lg">
@@ -72,12 +73,10 @@
                 </nav>
                 <!-- Carousel Card -->
                 <div id="carousel_ids" class="carousel carousel-fade" data-interval="false">
-                    <!--<div class="carousel-inner page-header mobile-bg" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="next">-->
-                      <div class="carousel-inner page-header mobile-bg">
+                    <div class="carousel-inner page-header mobile-bg" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="next">
                         <div class="carousel-item active">
-                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 1 <span>of</span> 15</h2>
-                          <img class=" my_class_3 freezeframe-responsive" src="http://static1.squarespace.com/static/51c748abe4b0c275d0aa86bf/56141631e4b0095d43132f02/5614164be4b0652b31fbd0a5/1444744817955/parislove9801.gif" />
-                          <div class="slide1"></div>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 1 <span>of</span> 15</h2>
+                          <figure class="slide"><x-gif ng-src="./assets/img/slide1.gif" n-times="1" speed=".8"></x-gif></figure>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
@@ -88,7 +87,7 @@
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 2 <span>of</span> 15</h2>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 2 <span>of</span> 15</h2>
                           <div class="slide2"></div>
                           <div class="carousel-caption">
                             <div class="gradient">
@@ -100,7 +99,7 @@
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 3 <span>of</span> 15</h2>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 3 <span>of</span> 15</h2>
                           <div class="slide3"></div>
                           <div class="carousel-caption">
                             <div class="gradient">
@@ -112,7 +111,7 @@
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 4 <span>of</span> 15</h2>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 4 <span>of</span> 15</h2>
                           <div class="slide4"></div>
                           <div class="carousel-caption">
                             <div class="gradient">
@@ -124,7 +123,7 @@
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide-to="0"><i class="material-icons">replay</i></a> · 5 <span>of</span> 15</h2>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 5 <span>of</span> 15</h2>
                           <div class="slide5"></div>
                           <div class="carousel-caption">
                             <div class="gradient">
