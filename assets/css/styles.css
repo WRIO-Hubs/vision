@@ -60,11 +60,6 @@ body{background: url('../img/bg.jpg') center center;background-attachment:fixed;
     .carousel .carousel-caption .caption-text{margin:auto;max-width:800px}
   .gradient{padding:20px 80px 40px;min-height:240px;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,1)))}
   .slide{position:absolute;top:266px;text-align:center;width:100%}
-  .slide_loading{background:url("../img/slide_loading.png") center no-repeat;height:1033px}
-  .slide_login{background:url("../img/slide_login.png") center no-repeat;height:1033px}
-  .slide_profile{background:url("../img/slide_profile.png") center no-repeat;height:1033px}
-  .slide_plus{background:url("../img/slide_plus.png") center no-repeat;height:1033px}
-  .slide_dashboard{background:url("../img/slide_dashboard.png") center no-repeat;height:1033px}
 
 .footer-big .gallery-feed h6{display:none}
 
