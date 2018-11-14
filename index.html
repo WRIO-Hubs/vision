@@ -10,32 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/material-kit.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    <link rel="stylesheet" href="assets/css/freezeframe_styles.min.css">
-    <script type="text/javascript" src="assets/js/freezeframe.pkgd.js"></script>
-    <script>
-      if ('registerElement' in document
-        && 'createShadowRoot' in HTMLElement.prototype
-        && 'import' in document.createElement('link')
-        && 'content' in document.createElement('template')) {
-        // We're using a browser with native WC support!
-      } else {
-        document.write('<script src="https:\/\/cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/plat1form.js"><\/script>')
-      }
-    </script>
-    <script src="demos/angular.min.js"></script>
-    <link rel="import" href="dist/x-gif.html">
-    <script type="text/javascript" charset="utf-8">
-      angular.module('x-gif-demo', []);
-      //restart gifs
-      $(document).ready(function(){$('#carousel_ids').click(
-        function(){
-          $("x-gif").attr("stopped","");
-          $("x-gif").removeAttr("stopped");}
-      );});
-    </script>
 </head>
-<body ng-app="x-gif-demo">
+<body>
         <div class="cd-section" id="headers">
             <div class="header-3">
                 <nav class="navbar navbar-transparent navbar-expand-lg">
@@ -77,11 +53,14 @@
                 </nav>
                 <!-- Carousel Card -->
                 <div id="carousel_ids" class="carousel carousel-fade" data-interval="false">
-                    <!--<div class="carousel-inner page-header mobile-bg" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="next">-->
                     <div class="carousel-inner page-header mobile-bg">
                         <div class="carousel-item active">
                           <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 1 <span>of</span> 8</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/loading.gif" n-times="1" speed=".8"></x-gif></figure>
+                          <div class="slide">
+                            <video controls autoplay muted>
+                              <source src="./assets/img/loading.webm" type="video/webm">
+                            </video>
+                          </div>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">

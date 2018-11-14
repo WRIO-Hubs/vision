@@ -24,6 +24,7 @@ body{background: url('../img/bg.jpg') center center;background-attachment:fixed;
     .carousel-inner .story a:hover{text-decoration:underline}
   .carousel-inner .material-icons{font-size:1.125rem;font-weight:bold;position:relative;top:3px}
   a.carousel-control-prev,a.carousel-control-next{position:fixed;z-index:99}
+  a.carousel-control-prev .material-icons,a.carousel-control-next .material-icons{font-size:50px}
   .bottom a.btn-lg{font-size:1.5em;margin:32px 0 0;padding:1.125rem 2.25rem 1rem!important}
   .bottom a.btn-link{font-weight:bold;font-size:1em;margin:32px 0 0;padding:1.125rem 2.25rem 1rem!important}
     .bottom a.btn-link:hover{color:#fff}
