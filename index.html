@@ -10,6 +10,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/material-kit.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!--<script type="text/javascript" charset="utf-8">
+      //restart videos
+      $(document).ready(function(){$('#carousel-control').click(
+        function(){
+          $("#video").load();}
+      );});
+      var video = document.getElementById('videoid');
+      video.load();
+    </script>-->
+
+    <script>
+    	window.addEventListener("load",function() {
+    		document.getElementById("carousel-control").addEventListener("click",restart,false);
+    	},false);
+
+    	function restart() {
+    		document.getElementById("video1").currentTime=0;
+    		document.getElementById("video2").currentTime=0;
+    		document.getElementById("video3").currentTime=0;
+    		document.getElementById("video4").currentTime=0;
+    		document.getElementById("video5").currentTime=0;
+    		document.getElementById("video6").currentTime=0;
+    		document.getElementById("video7").currentTime=0;
+    		play();
+    	}
+    </script>
 </head>
 <body>
         <div class="cd-section" id="headers">
@@ -57,8 +83,8 @@
                         <div class="carousel-item active">
                           <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 1 <span>of</span> 8</h2>
                           <div class="slide">
-                            <video controls autoplay muted>
-                              <source src="./assets/img/loading.webm" type="video/webm">
+                            <video id="video1" controls autoplay muted>
+                              <source src="./assets/video/loading.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
                             </video>
                           </div>
                           <div class="carousel-caption">
@@ -75,12 +101,16 @@ WRIO Internet OS is a platform designed to be an upgrade to a distributed, block
                         </div>
                         <div class="carousel-item">
                           <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 2 <span>of</span> 8</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/profile.gif" n-times="1" speed=".2"></x-gif></figure>
+                          <div class="slide">
+                            <video id="video2" controls autoplay muted>
+                              <source src="./assets/video/profile.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                            </video>
+                          </div>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
                                 <h2 class="title">Single secure sign-in and profile</h2>
-                                <h4>Blockchain address functions as ID. The authorisation system based on blockchain enables a decentralized global secure one-click “social-media-like” login for all Web 3.0 applications and services, with the additional protection of anonymity. This means no need to continuously create new accounts and entrust personal data to services.
+                                <h4>Blockchain address functions as ID. The authorisation system based on blockchain enables a decentralized global privacy-respectful and secure one-click “social-media-like” login for Web 3.0 applications and services. This means no need to continuously create new accounts and entrust personal data to services.
                                   <span class="list"><br><b>Benefits:</b>
 <ul><li>Single sign-in: ​blockchain addresses function as IDs; secure one-click authorization</li>
 <li>Decentralization: user’s assets и ссылка на профиль хранятся в блокчейне</li>
@@ -92,7 +122,11 @@ WRIO Internet OS is a platform designed to be an upgrade to a distributed, block
                         </div>
                         <div class="carousel-item">
                           <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 3 <span>of</span> 8</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/create.gif" n-times="1" speed=".2"></x-gif></figure>
+                          <div class="slide">
+                            <video id="video3" controls autoplay muted>
+                              <source src="./assets/video/create.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                            </video>
+                          </div>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
@@ -105,7 +139,11 @@ WRIO Internet OS is a platform designed to be an upgrade to a distributed, block
                         </div>
                         <div class="carousel-item">
                           <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 4 <span>of</span> 8</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/apps.gif" n-times="1" speed=".15"></x-gif></figure>
+                          <div class="slide">
+                            <video id="video4" controls autoplay muted>
+                              <source src="./assets/video/apps.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                            </video>
+                          </div>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
@@ -117,8 +155,11 @@ WRIO Internet OS is a platform designed to be an upgrade to a distributed, block
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 5 <span>of</span> 8</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/streams.gif" n-times="1" speed=".15"></x-gif></figure>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 5 <span>of</span> 8</h2><div class="slide">
+                            <video id="video5" controls autoplay muted>
+                              <source src="./assets/video/streams.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                            </video>
+                          </div>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
@@ -132,8 +173,11 @@ WRIO Internet OS is a platform designed to be an upgrade to a distributed, block
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 6 <span>of</span> 8</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/rating.gif" n-times="1" speed=".15"></x-gif></figure>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 6 <span>of</span> 8</h2><div class="slide">
+                            <video id="video6" controls autoplay muted>
+                              <source src="./assets/video/rating.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                            </video>
+                          </div>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
@@ -146,8 +190,11 @@ WRIO Internet OS is a platform designed to be an upgrade to a distributed, block
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 7 <span>of</span> 8</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/offers.gif" n-times="1" speed=".15"></x-gif></figure>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 7 <span>of</span> 8</h2><div class="slide">
+                            <video id="video7" controls autoplay muted>
+                              <source src="./assets/video/offers.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                            </video>
+                          </div>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
@@ -179,14 +226,16 @@ WRIO Internet OS is a platform designed to be an upgrade to a distributed, block
                           </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carousel_ids" role="button" data-slide="prev">
-                        <i class="material-icons">keyboard_arrow_left</i>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel_ids" role="button" data-slide="next">
-                        <i class="material-icons">keyboard_arrow_right</i>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div id="carousel-control">
+                      <a class="carousel-control-prev" href="#carousel_ids" role="button" data-slide="prev">
+                          <i class="material-icons">keyboard_arrow_left</i>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carousel_ids" role="button" data-slide="next">
+                          <i class="material-icons">keyboard_arrow_right</i>
+                          <span class="sr-only">Next</span>
+                      </a>
+                    </div>
                 </div>
             </div>
 
