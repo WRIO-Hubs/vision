@@ -14,7 +14,8 @@ body{background: url('../img/bg.jpg') center center;background-attachment:fixed;
 .gradient a:hover{text-decoration:underline}
 .carousel-inner .carousel-control-next{opacity:1}
   .carousel-inner .carousel-control-next .material-icons{font-size:36px;height:36px;position:inherit}
-  .carousel-inner ul{font-size:1.125rem;line-height:1.5em;list-style-type:none;padding:0}
+  .carousel-inner .list{text-align:left;width:66%;display:block;margin:0 auto}
+  .carousel-inner ul{font-size:1.125rem;line-height:1.5em;padding:0}
     .carousel-inner .story ul{color:#ccc;font-size:1em;list-style-type:disc}
   .carousel-inner ul.grey{color:#eee}
   .carousel-inner ul a{color:#46bdf4;font-size:1.125rem!important}
@@ -60,6 +61,8 @@ body{background: url('../img/bg.jpg') center center;background-attachment:fixed;
     .carousel .carousel-caption .caption-text{margin:auto;max-width:800px}
   .gradient{padding:20px 80px 40px;min-height:240px;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,1)))}
   .slide{position:absolute;top:266px;text-align:center;width:100%}
+  .slide-vision{background:url("../img/vision.jpg") center center no-repeat;position:absolute;top:136px;width:100%;height:1033px}
+    .carousel .last .carousel-caption{top:800px}
 
 .footer-big .gallery-feed h6{display:none}
 

@@ -28,7 +28,11 @@
     <script type="text/javascript" charset="utf-8">
       angular.module('x-gif-demo', []);
       //restart gifs
-      $(document).ready(function(){$('#carousel_ids').click(function(){$("x-gif").removeAttr("stopped");});});
+      $(document).ready(function(){$('#carousel_ids').click(
+        function(){
+          $("x-gif").attr("stopped","");
+          $("x-gif").removeAttr("stopped");}
+      );});
     </script>
 </head>
 <body ng-app="x-gif-demo">
@@ -76,98 +80,131 @@
                     <!--<div class="carousel-inner page-header mobile-bg" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="next">-->
                     <div class="carousel-inner page-header mobile-bg">
                         <div class="carousel-item active">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 1 <span>of</span> 15</h2>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 1 <span>of</span> 8</h2>
                           <figure class="slide"><x-gif ng-src="./assets/img/loading.gif" n-times="1" speed=".8"></x-gif></figure>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
-                                <h2 class="title">Internet OS</h2>
-                                <h4>WRIO <a href="https://en.wikipedia.org/wiki/Internet_OS" target="_blank">Internet OS</a><sup><i class="fa fa-window-maximize"></i></sup> is an operating system designed to run all of its applications and services through a web browser, что отображено в motto проекта: All You Need Is A Browser.
-Обработка всех resource hungry operations в облаке, что позволяет работать системе на самых простых thin client устройствах обладающими минимальными hardware характеристиками, экраном и доступом в интернет.</h4>
+                                <h2 class="title">WRIO Internet OS</h2>
+                                <h4><a href="https://en.wikipedia.org/wiki/Internet_OS" target="_blank">Internet OS</a><sup><i class="fa fa-window-maximize"></i></sup> is an operating system designed to run all of its applications and services through a web browser, что отображено в motto проекта: All You Need Is A Browser.
+                                  <br>
+Обработка всех resource hungry operations в облаке, что позволяет работать системе на самых простых thin client устройствах обладающими лишь минимальными hardware характеристиками и доступом в интернет.
+WRIO Internet OS is a platform designed to be an upgrade to a distributed, blockchain powered, machine-readable and secure user-centric Web 3.0. The platform serves as a ‘Google Play’ for user-centric apps and predictive services based on our semantic protocol that features automatic data processing and enables accurate auto delivery of content, products and services to relevant consumers without ads.</h4>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 2 <span>of</span> 15</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/login.gif" n-times="1"></x-gif></figure>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 2 <span>of</span> 8</h2>
+                          <figure class="slide"><x-gif ng-src="./assets/img/profile.gif" n-times="1" speed=".2"></x-gif></figure>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
-                                <h2 class="title">Single sign-in</h2>
-                                <h4>Blockchain address functions as ID. Access is granted through the use of a crypto key stored on the user’s side. The authorisation system based on blockchain enables a decentralized global secure one-click “social-media-like” login for all applications and services, with the additional protection of anonymity. This means no need to continuously create new accounts and entrust personal data to services. Ссылка на профиль сохраняется в блокчейне.</h4>
+                                <h2 class="title">Single secure sign-in and profile</h2>
+                                <h4>Blockchain address functions as ID. The authorisation system based on blockchain enables a decentralized global secure one-click “social-media-like” login for all Web 3.0 applications and services, with the additional protection of anonymity. This means no need to continuously create new accounts and entrust personal data to services.
+                                  <span class="list"><br><b>Benefits:</b>
+<ul><li>Single sign-in: ​blockchain addresses function as IDs; secure one-click authorization</li>
+<li>Decentralization: user’s assets и ссылка на профиль хранятся в блокчейне</li>
+<li>Privacy and anonymity: личные данные могут быть зашифрованы, access is granted through the use of a crypto key stored on the user’s side</li>
+<li>User-controlled disclosure: пользователь полностью контролирует доступ к профилю и личным данным</li></ul></span></h4>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 3 <span>of</span> 15</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/profile.gif" n-times="1" speed=".3"></x-gif></figure>
-                          <div class="carousel-caption">
-                            <div class="gradient">
-                              <div class="caption-text">
-                                <h2 class="title">Profile</h2>
-                                <h4>Доступ ко всем assets и зашифрованным на странице блокчейн-ключом private data данным только у пользователя. Пользователь контролирует доступ  к ним приложениями.</h4>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 4 <span>of</span> 15</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/create.gif" n-times="1" speed=".3"></x-gif></figure>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 3 <span>of</span> 8</h2>
+                          <figure class="slide"><x-gif ng-src="./assets/img/create.gif" n-times="1" speed=".2"></x-gif></figure>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
                                 <h2 class="title">Create</h2>
-                                <h4><h4>Web 3.0 pages are generated based on <a href="https://schema.org" target="_blank">vocabularies</a><sup><i class="fa fa-window-maximize"></i></sup> founded by Google, Microsoft, Yahoo and Yandex and do not require search engine optimization or parsing for their indexation. Данные сохраняются в machine-readable key:value format. Keys are like a machine dictionary, making <a href="https://en.wikipedia.org/wiki/Folksonomy" target="_blank">folksonomy</a><sup><i class="fa fa-window-maximize"></i></sup> (tagging) obsolete и features automatic data processing, позволяя sorting it for each user. См. детали в <a href="https://demo.wr.io" target="_blank">tech demo</a><sup><i class="fa fa-window-maximize"></i></sup>
-                                <br>Это позволяет создавать predictive поисковики и user-centric сервисы нового поколения, использующие блокчейн в качестве единой metadata base. Далее это будет рассмотрено на примере приложения Streams.</h4>
+                                <h4>Web 3.0 pages are generated based on <a href="https://schema.org" target="_blank">vocabularies</a><sup><i class="fa fa-window-maximize"></i></sup> founded by Google, Microsoft, Yahoo and Yandex and do not require search engine optimization or parsing for their indexation. Данные сохраняются в machine-readable key:value format. Keys are like a machine dictionary, making <a href="https://en.wikipedia.org/wiki/Folksonomy" target="_blank">folksonomy</a><sup><i class="fa fa-window-maximize"></i></sup> (tagging) obsolete и features automatic data processing, позволяя sorting it for each user. См. детали в <a href="https://demo.wr.io" target="_blank">tech demo</a><sup><i class="fa fa-window-maximize"></i></sup>
+                                <br>Зарегистрированные в блокчейне страницы могут быть найдены по metadata, а их незашифрованные данные и факты использованы и подгружаться из оригинального источника без copy/paste или API — websites’ borders dissolve, и веб становится связанным в единую семантическую сеть reusable данных. Это позволяет создавать predictive поисковики и user-centric сервисы нового поколения, использующие блокчейн в качестве единой metadata base.</h4>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 5 <span>of</span> 15</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/page.gif" n-times="1" speed=".5"></x-gif></figure>
-                          <div class="carousel-caption">
-                            <div class="gradient">
-                              <div class="caption-text">
-                                <h2 class="title">Page</h2>
-                                <h4>Reactive delivering — автоматическая рекомендация начальной и наиболее релевантной аудитории. Система продолжает распространять контент пока идет положительная реакция от читателей, которая зависит от времени чтения, количества и размера донатов, активностью комментирование и шаринга и пр. No copy/paste: данные подгружаются из оригинального источника.</h4>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 6 <span>of</span> 15</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/dashboard.gif" n-times="1" speed=".5"></x-gif></figure>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 4 <span>of</span> 8</h2>
+                          <figure class="slide"><x-gif ng-src="./assets/img/apps.gif" n-times="1" speed=".15"></x-gif></figure>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
                                 <h2 class="title">Apps</h2>
-                                <h4>WRIO приложения <a href="https://en.wikipedia.org/wiki/Mashup_%28web_application_hybrid%29" target="_blank">mashup</a><sup><i class="fa fa-window-maximize"></i></sup>, т.е. функционал приложений может дополнять друг друга как паззл.</h4>
+                                <h4>В отличие от Web 2.0, UI и функционал Web 3.0 страниц определяется пользователем — user-centric подход. WRIO cloud apps are <a href="https://en.wikipedia.org/wiki/Mashup_%28web_application_hybrid%29" target="_blank">mashup</a><sup><i class="fa fa-window-maximize"></i></sup>, т.е. функционал приложений может дополнять друг друга как паззл.
+                                <br>Cloud apps can operate on the most simple devices, are always up-to-date, do not need to download, install or setup any software. All resource consuming operations are performed on the service provider’s servers, displaying the end result on the user’s screen.</h4>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 7 <span>of</span> 15</h2>
-                          <figure class="slide"><x-gif ng-src="./assets/img/dashboard.gif" n-times="1"></x-gif></figure>
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 5 <span>of</span> 8</h2>
+                          <figure class="slide"><x-gif ng-src="./assets/img/streams.gif" n-times="1" speed=".15"></x-gif></figure>
                           <div class="carousel-caption">
                             <div class="gradient">
                               <div class="caption-text">
                                 <h2 class="title">Streams</h2>
-                                <h4>Streams — первое wrioos предиктивное приложение, которое в авто режиме собирает зарегистрированные в блокчейне страницы и сортирует их по стримам и персонализирует для каждого посетителя на основе его интересов и критериев.
-                                  <br>Новые страницы рекомендуется наиболее релевантной аудитории и распространяются пока идет положительная реакция от читателей — Reactive delivering. Учитывается время чтения, количество и размер донатов, активность комментирования, количество sharing и пр.</h4>
+                                <h4>Streams — первое WRIO предиктивное приложение, которое использует зарегистрированные в блокчейне страницы, сортирует их по стримам и персонализирует для каждого посетителя на основе его интересов и критериев.
+                                  <br>Посты рекомендуются наиболее релевантной аудитории и распространяются пока идет положительная реакция от читателей. Учитывается время чтения, количество и размер донатов, активность комментирования, количество sharing и пр.
+                                  <br>Система вознаграждает пользователей токенами за различную активность, которая способствует развитию проекта — the concept of PoSA (proof of social action) лежит в основе tokens mining. Самым простым примером является возможность получать 10 токенов просто кликая кнопку “Claim tokens” раз в час, что стимулирует user retention. Распространение постов и promotion приносят пользователям дополнительные токены, а авторам — новых читателей.
+                                  <br>Помимо этого наиболее активные пользователи получают лучшие офферы и их собственные посты продвигаются системой на льготных условиях.</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 6 <span>of</span> 8</h2>
+                          <figure class="slide"><x-gif ng-src="./assets/img/rating.gif" n-times="1" speed=".15"></x-gif></figure>
+                          <div class="carousel-caption">
+                            <div class="gradient">
+                              <div class="caption-text">
+                                <h2 class="title">Rating</h2>
+                                <h4>Basically, your Rating is a measure of how active you are on the platform, and how much everyone appreciates your contribution. В отличие от ненадежного и легко манипулируемого 5-star подхода, Rating схож с <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank</a><sup><i class="fa fa-window-maximize"></i></sup> и рассчитывается автоматически на базе степени удовлетворения пользователей отраженное с учетом множества показателей: количество шаринга, размер и количество донатов, рейтинг донаторов и followers, reviews, статистика retention и многое другое.
+                                  <br>Система Rating обеспечивает trust без необходимости в идентификации. В основе лежит доказанная состоятельность концепции другими сервисами: получение рейтинга связано со сложностью и time consuming накопления репутации и быстрой его потери при злоупотреблении.
+                                  <br>Помимо этого Rating является социальным доказательством владения определенных skills и знаний что наряду с automatic data processing and delivering может применяться во множестве различных сервисов: поиске работы и подборе сотрудников, like-minded друзей, личных и бизнес-партнеров, в качестве эффективного антиспам фильтра, продвижении — где сама оценка Rating является лучшей рекламой, и многого другого. См. <a href="https://wr.io/WhitePaper.pdf" target="_blank">White Paper</a><sup><i class="fa fa-window-maximize"></i></sup> для деталей.</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 7 <span>of</span> 8</h2>
+                          <figure class="slide"><x-gif ng-src="./assets/img/offers.gif" n-times="1" speed=".15"></x-gif></figure>
+                          <div class="carousel-caption">
+                            <div class="gradient">
+                              <div class="caption-text">
+                                <h2 class="title">Brand Loyalty and Offers</h2>
+                                <h4>Brand Loyalty feature доступна premium сервисам и начинается для пользователей с following путем занесения сервиса в bookmarked. Уровень лояльности определяет размер и количество бенефитов для follower’а: доступ к премиум контенту, скидкам, розыгрышам призов, и прочим Offers.
+                                  <br>В отличие от рекламы, Offers — добровольно просматриваемые предложения и могут быть персонализированы на основе того, что система знает о пользователе, его интересах и предпочтениях. Activity (участие в affiliates программах и polls, viewing, sharing, commenting, recommending, etc.) earns discounts and other bonuses. The more frequently a user checks Offers and interacts with them, the better Offers they will get.
+                                  <br>Как и посты Offers распространяются среди наиболее релевантных пользователей: чем лучше отзывы потребителей, тем шире предложение распространяется. Таким образом важно лишь насколько ценен сам оффер сообществу, а не размер рекламного бюджета.</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item last">
+                          <h2 class="title pull-right"><a href="."><i class="material-icons">replay</i></a> · 8 <span>of</span> 8</h2>
+                          <div class="slide-vision"></div>
+                          <div class="carousel-caption">
+                            <div class="gradient">
+                              <div class="caption-text">
+                                <h2 class="title">Vision</h2>
+                                <h4>Цель проекта служит создание нового веба в основе которого лежит automatic data processing, что открывает множество уникальных features описанных в <a href="https://presentation.wr.io" target="_blank">Presentation</a><sup><i class="fa fa-window-maximize"></i></sup>
+<br>За мобильными и планшетами придут новые thin-client terminal devices with a browser-driven OS, которые будут лишь экраном с доступом в интернет и откроют для миллионов пользователей custom, curated, secure and viruses-free browsing experience, and eventually will change the entire web. We will see Web 3.0 version of googles, skypes, ebays, paypals, facebooks, ubers, etc., using a public distributed source of machine-readable data pool. Borders of websites and domains that divide nowadays web will dissolve, and we will witness the advent of the P2P web: a network of interrelated peers powered by WRIO Internet OS that can exchange information without any restrictions, while respecting privacy at the same time. Find more at <a href="https://webrunes.com/blog/Vision/" target="_blank">https://webrunes.com/blog/Vision/</a><sup><i class="fa fa-window-maximize"></i></sup>
+                                <span class="list"><br><b>Links:</b>
+                                <ul><li><a href="https://wr.io" target="_blank">Landing</a><sup><i class="fa fa-window-maximize"></i></sup></li>
+                                <li><a href="https://presentation.wr.io" target="_blank">Presentation</a><sup><i class="fa fa-window-maximize"></i></sup></li>
+                                <li><a href="https://wr.io/PitchDeck.pdf" target="_blank">Pitch Deck</a><sup><i class="fa fa-window-maximize"></i></sup></li>
+                                <li><a href="https://wr.io/BusinessPlan.pdf" target="_blank">Business Plan</a><sup><i class="fa fa-window-maximize"></i></sup></li>
+                                <li><a href="https://wr.io/WhitePaper.pdf" target="_blank">White Paper</a><sup><i class="fa fa-window-maximize"></i></sup></li></ul></span></h4>
                               </div>
                             </div>
                           </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel_ids" role="button" data-slide="prev">
                         <i class="material-icons">keyboard_arrow_left</i>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carousel_ids" onclick="scrollTopAnimated(0)" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel_ids" role="button" data-slide="next">
                         <i class="material-icons">keyboard_arrow_right</i>
                         <span class="sr-only">Next</span>
                     </a>
